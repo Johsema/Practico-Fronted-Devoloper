@@ -38,6 +38,9 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 30rem;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
 }
 .logo{
     width: 15rem;
@@ -77,7 +80,31 @@ body{
     padding: 0.6rem;
     margin-bottom: 1.2rem;
 }
-
+/*Fin: Pantalla de Create a New Password*/
+/*Inicio Pantalla Email*/
+.email-image{
+    width: 13.2rem;
+    height: 13.2rem;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-image img{
+    width: 8rem;
+}
+.resend{
+    font-size: var(--sm);
+}
+.resend span{
+    color: var(--very-light-pink);
+}
+.resend a{
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+/*FIn: Pantalla de Email*/
 .primary-button {
     background-color: var(--hospital-green);
     border-radius: 0.8rem;
@@ -94,8 +121,6 @@ body{
     margin-top: 1.4rem;
     margin-bottom: 3rem;
 }
-/*Fin: Pantalla de Create a New Password*/
-
 
 
 
