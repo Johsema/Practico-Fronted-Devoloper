@@ -1,0 +1,145 @@
+/* Inicio de variables globales*/
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size:62.5%;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+}
+
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+/*Fin de variables globales*/
+
+/* Inicio: Pantalla de Create a NEW PASSWORD*/
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 30rem;
+}
+.logo{
+    width: 15rem;
+    margin-bottom: 4.8rem;
+    justify-self: center;
+    display: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;}
+
+.form a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5.2rem;
+}
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 0.8rem;
+    height: 3rem;
+    font-size: var(--md);
+    padding: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.input-email{
+    margin-bottom: 2.2 rem;
+}
+/*Fin: Pantalla de Create a New Password*/
+/*Inicio Pantalla Email*/
+.email-image{
+    width: 13.2rem;
+    height: 13.2rem;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-image img{
+    width: 8rem;
+}
+.resend{
+    font-size: var(--sm);
+}
+.resend span{
+    color: var(--black);
+}
+.resend a{
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+/*FIn: Pantalla de Email*/
+.primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 0.8rem;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+}
+
+.secondary-button {
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+}
+
+.login-button{
+    margin-top: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+
+
+@media (max-width: 640px){
+    .logo{
+        display: block;
+    }
+
+    .secondary-button{
+        position: absolute;
+        bottom: 2rem;
+        width: inherit;
+    }
+}
